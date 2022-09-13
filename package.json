@@ -11,6 +11,10 @@
     "mocha": "mocha test/",
     "test": "npm run lint && npm run mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NielsLeenheer/EscPosEncoder.git"
+  },
   "keywords": [
     "pos",
     "escpos",
@@ -23,6 +27,10 @@
   ],
   "author": "David Ahiataku",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahiatak/bluetooth-webusb-thermal-printer/issues"
+  },
+  "homepage": "https://github.com/ahiatak/bluetooth-webusb-thermal-printer#readme",
   "devDependencies": {
     "browserify": "^17.0.0",
     "chai": "^4.3.6",
