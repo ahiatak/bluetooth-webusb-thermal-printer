@@ -1,0 +1,38 @@
+{
+  "name": "bluetooth-webusb-thermal-printer",
+  "version": "1.0.0",
+  "description": "Print Html page, base64, canvas, text, image url via bluetooth usb webusb  with thermal printer",
+  "main": "src/thermal-printer-encoder.js",
+  "scripts": {
+    "bundle": "browserify src/thermal-printer-encoder.js --standalone EscPosEncoder -o dist/thermal-printer-encoder.js",
+    "uglify": "uglifyjs dist/thermal-printer-encoder.js -cm --overwrite -o dist/thermal-printer-encoder.js",
+    "build": "npm run bundle && npm run uglify",
+    "lint": "eslint --fix src/thermal-printer-encoder.js",
+    "mocha": "mocha test/",
+    "test": "npm run lint && npm run mocha"
+  },
+  "keywords": [
+    "pos",
+    "escpos",
+    "receipt",
+    "printer",
+    "base64 thermal printer",
+    "Html thermal printer",
+    "bluetooth thermal printer",
+    "webusb thermal printer",
+  ],
+  "author": "David Ahiataku",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.23.1",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^10.0.0",
+    "uglify-es": "^3.3.9"
+  },
+  "dependencies": {
+    "esc-pos-encoder": "^1.3.0",
+    "html2canvas": "^1.4.1"
+  }
+}
